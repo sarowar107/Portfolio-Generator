@@ -1,5 +1,6 @@
 import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { downloadPortfolio } from '@/utils/portfolioGenerator';
 import TemplateA from '@/templates/TemplateA';
 import TemplateB from '@/templates/TemplateB';
 import TemplateC from '@/templates/TemplateC';
@@ -15,6 +16,7 @@ import TemplateL from '@/templates/TemplateL';
 import { dummyData } from '@/data/dummyData';
 import { Button } from '@/components/ui/Button';
 import { ArrowLeft, Download, Edit } from 'lucide-react';
+import { toast } from '@/hooks/use-toast';
 
 const templateComponents = {
   'minimalist-pro': TemplateA,
@@ -36,6 +38,7 @@ const Preview = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [photoUrl, setPhotoUrl] = useState<string | null>(null);
+  const [isDownloading, setIsDownloading] = useState(false);
 
   const formData = location.state?.portfolioData;
 
@@ -67,6 +70,34 @@ const Preview = () => {
     return null; // or a loading/error component
   }
 
+  const handleDownload = async () => {
+    if (!formData) {
+      toast({
+        title: "Error",
+        description: "No portfolio data available for download. Please customize a template first.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsDownloading(true);
+    try {
+      await downloadPortfolio(templateId, dataToRender);
+      toast({
+        title: "Success!",
+        description: "Your portfolio has been downloaded successfully.",
+      });
+    } catch (error) {
+      toast({
+        title: "Download Failed",
+        description: "There was an error generating your portfolio. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   return (
     <div className="bg-background">
       <div className="sticky top-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-border">
@@ -81,9 +112,9 @@ const Preview = () => {
                 Previewing: <span className="font-semibold text-text">{templateId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</span>
               </span>
               {cameFromCustomize ? (
-                 <Button>
+                 <Button onClick={handleDownload} disabled={isDownloading}>
                     <Download className="mr-2 h-4 w-4" />
-                    Download Portfolio
+                    {isDownloading ? 'Generating...' : 'Download Portfolio'}
                  </Button>
               ) : (
                 <Button asChild>
