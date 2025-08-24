@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 
-const TemplateCard = ({ id, name, description, imageUrl }) => (
+interface TemplateCardProps {
+  id: string | number;
+  name: string;
+  description: string;
+  imageUrl: string;
+}
+
+const TemplateCard = ({ id, name, description, imageUrl }: TemplateCardProps) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -35,73 +42,74 @@ const Home = () => {
       id: "minimalist-pro",
       name: "Minimalist Pro",
       description: "A clean, professional, and content-focused design. Perfect for developers and academics.",
-      imageUrl: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/1.png"
     },
     {
       id: "creative-showcase",
       name: "Creative Showcase",
       description: "A visually engaging and dynamic layout. Ideal for designers, artists, and creatives.",
-      imageUrl: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/2.png"
+
     },
     {
       id: "cyberpunk-neon",
       name: "Cyberpunk Neon",
       description: "A dark, futuristic theme with neon accents. For the forward-thinking tech professional.",
-      imageUrl: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/3.png"
     },
     {
       id: "classic-editorial",
       name: "Classic Editorial",
       description: "An elegant, serif-focused layout inspired by high-end publications. For writers and academics.",
-      imageUrl: "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/4.png"
     },
     {
       id: "brutalist-block",
       name: "Brutalist Block",
       description: "A stark, minimalist design with sharp edges and bold typography. Unapologetically direct.",
-      imageUrl: "https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/5.png"
     },
     {
       id: "soft-friendly",
       name: "Soft & Friendly",
       description: "A playful and inviting design with pastel colors and rounded shapes. Perfect for UI/UX designers.",
-      imageUrl: "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/6.png"
     },
     {
       id: "corporate-executive",
       name: "Corporate Executive",
       description: "A professional, structured layout perfect for business contexts and project managers.",
-      imageUrl: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/7.png"
     },
     {
       id: "gradient-fusion",
       name: "Gradient Fusion",
       description: "A vibrant, modern design featuring bold gradients and glassmorphism. For the modern frontend dev.",
-      imageUrl: "https://images.pexels.com/photos/2693208/pexels-photo-2693208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/8.png"
     },
     {
       id: "monochrome-accent",
       name: "Monochrome Accent",
       description: "A high-contrast black and white theme with a single, striking accent color. Bold and focused.",
-      imageUrl: "https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/9.png"
     },
     {
       id: "earthy-organic",
       name: "Earthy & Organic",
       description: "A nature-inspired theme with warm, earthy tones and a natural feel. For photographers and artists.",
-      imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/10.png"
     },
     {
       id: "retro-arcade",
       name: "Retro Arcade",
       description: "A nostalgic 80s synthwave theme with retro fonts and neon glows. Fun and unique.",
-      imageUrl: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/11.png"
     },
     {
       id: "gilded-onyx",
       name: "Gilded Onyx",
       description: "A luxurious and sophisticated dark theme with gold accents. For a premium, high-end feel.",
-      imageUrl: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://raw.githubusercontent.com/sarowar107/photos/main/12.png"
     }
   ];
 
