@@ -35,73 +35,73 @@ const Home = () => {
       id: "minimalist-pro",
       name: "Minimalist Pro",
       description: "A clean, professional, and content-focused design. Perfect for developers and academics.",
-      imageUrl: "https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "creative-showcase",
       name: "Creative Showcase",
       description: "A visually engaging and dynamic layout. Ideal for designers, artists, and creatives.",
-      imageUrl: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "cyberpunk-neon",
       name: "Cyberpunk Neon",
       description: "A dark, futuristic theme with neon accents. For the forward-thinking tech professional.",
-      imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "classic-editorial",
       name: "Classic Editorial",
       description: "An elegant, serif-focused layout inspired by high-end publications. For writers and academics.",
-      imageUrl: "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "brutalist-block",
       name: "Brutalist Block",
       description: "A stark, minimalist design with sharp edges and bold typography. Unapologetically direct.",
-      imageUrl: "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "soft-friendly",
       name: "Soft & Friendly",
       description: "A playful and inviting design with pastel colors and rounded shapes. Perfect for UI/UX designers.",
-      imageUrl: "https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "corporate-executive",
       name: "Corporate Executive",
       description: "A professional, structured layout perfect for business contexts and project managers.",
-      imageUrl: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "gradient-fusion",
       name: "Gradient Fusion",
       description: "A vibrant, modern design featuring bold gradients and glassmorphism. For the modern frontend dev.",
-      imageUrl: "https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/2693208/pexels-photo-2693208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "monochrome-accent",
       name: "Monochrome Accent",
       description: "A high-contrast black and white theme with a single, striking accent color. Bold and focused.",
-      imageUrl: "https://images.pexels.com/photos/268791/pexels-photo-268791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "earthy-organic",
       name: "Earthy & Organic",
       description: "A nature-inspired theme with warm, earthy tones and a natural feel. For photographers and artists.",
-      imageUrl: "https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "retro-arcade",
       name: "Retro Arcade",
       description: "A nostalgic 80s synthwave theme with retro fonts and neon glows. Fun and unique.",
-      imageUrl: "https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       id: "gilded-onyx",
       name: "Gilded Onyx",
       description: "A luxurious and sophisticated dark theme with gold accents. For a premium, high-end feel.",
-      imageUrl: "https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageUrl: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
   ];
 
